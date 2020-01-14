@@ -1,8 +1,17 @@
-<div>
-  <input type="text" [(ngModel)]="name" >
-  {{name}}
-</div>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
 
-<h3>I m in the AppComponent.</h3>
-<hr>
-<app-books></app-books>
+      <div>
+        <input type="text" [(ngModel)]="name">
+        {{name}}
+      </div>
+      <hr>
+      <h3>I m from AppComponent.</h3>
+      <hr>
+      <app-books></app-books>
+    </div>
+  </div>
+  
+
+</div>
