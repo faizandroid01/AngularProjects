@@ -1,3 +1,25 @@
 h3 {
-    color: darkcyan
+  color: whitesmoke;
+  font-family: SansSerif, serif;
+  font-style: oblique;
+}
+hr{
+  color: cadetblue;
+  alignment: center;
+  width: 80%;
+}
+
+.topHeader {
+  background-color: darkcyan;
+  padding: 10px;
+}
+
+.search {
+  text-align: end;
+  caret-color: black;
+  margin-right: 50px  ;
+}
+
+.bodyContainer {
+  margin: 10px;
 }

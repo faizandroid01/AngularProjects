@@ -1,17 +1,18 @@
-<div class="container">
-  <div class="row">
-    <div class="col-xs-12">
+<div class="topHeader">
+  <h3>I m from AppComponent.</h3>
+</div>
+<hr >
 
-      <div>
-        <input type="text" [(ngModel)]="name">
-        {{name}}
-      </div>
-      <hr>
-      <h3>I m from AppComponent.</h3>
-      <hr>
-      <app-books></app-books>
-    </div>
+<div class="bodyContainer">
+  <div class="search">
+    <input type="text" [(ngModel)]="name">
   </div>
-  
+  {{name}}
+
+  <app-books></app-books>
 
 </div>
+
+
+
+
