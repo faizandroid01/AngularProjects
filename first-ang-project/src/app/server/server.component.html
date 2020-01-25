@@ -20,10 +20,12 @@ Server status  : {{serverCreationStatus}}
 <!--Forms Module is to be imported in App module from @angular/core-->
   <input class="form-control"
          (input)="onUpdateServerName($event)"
-         [(ngModel)]="through2WayBinding">
+        >
+  <br>
+  <input class="form-control" [(ngModel)]="serverName" >
 
   <label>Server Name Through ($event) bind  : </label> {{serverName}} <br>
-  <label>Server Name Through (2Way-Binding) : </label> {{through2WayBinding}}
+  <label>Server Name Through (2Way-Binding) : </label> {{serverName}}
 </div>
 
 </div>
