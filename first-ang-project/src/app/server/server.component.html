@@ -1,1 +1,32 @@
-<p>  I am Server Component !!! </p>
+<p> I am Server Component !!! </p>
+
+<div class="base">
+
+<h6> UserName : {{userName}}</h6>
+<h6> Role : {{role}}</h6>
+<h6> Dept : {{dept}}</h6>
+<h6> Status : {{getStatus()}}</h6>
+
+<button class="btn btn-primary"
+        [disabled]=!allowNewServer
+        (click)="onServerCreated()"
+> Add Server
+</button>
+
+<h4 [innerText]="allowNewServer"> Button Active {{allowNewServer}}</h4>
+Server status  : {{serverCreationStatus}}
+
+<div class="eventBinding">
+<!--Forms Module is to be imported in App module from @angular/core-->
+  <input class="form-control"
+         (input)="onUpdateServerName($event)"
+         [(ngModel)]="through2WayBinding">
+
+  <label>Server Name Through ($event) bind  : </label> {{serverName}} <br>
+  <label>Server Name Through (2Way-Binding) : </label> {{through2WayBinding}}
+</div>
+
+</div>
+
+
+
