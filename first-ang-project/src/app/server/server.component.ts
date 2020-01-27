@@ -13,29 +13,29 @@ export class ServerComponent {
   serverName = '';
 
   serverCreationStatus = 'No server Created';
+  serverCreated = false;
 
   constructor() {
     setTimeout(() => {
       this.allowNewServer = true;
     }, 2000);
+
   }
 
-  userName = 'Faiz Ahmed';
-  role = 'Front Office';
-  dept = 10;
-  status = '';
-  through2WayBinding: '';
-
-  getStatus() {
-    return this.status = 'Active';
-  }
 
   onServerCreated() {
-    this.serverCreationStatus = 'Server Created Successfully ';
+    this.serverCreated = true;
+    this.serverCreationStatus = 'Server Created Successfully & the name of server is ' + this.serverName;
   }
 
   onUpdateServerName(event: Event) {
     this.serverName = (event.target as HTMLInputElement).value;
+  }
+
+
+  onResetClicked() {
+    this.serverName = ' ';
+    this.serverCreated = false;
   }
 }
 

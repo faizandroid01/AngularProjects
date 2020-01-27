@@ -9,3 +9,7 @@ p {
 .base {
   margin: 10px;
 }
+
+.redLabel{
+  color: darkred;
+}

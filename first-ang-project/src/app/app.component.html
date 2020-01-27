@@ -3,8 +3,16 @@
 </div>
 <hr>
 
+<div class="bodyContainer">
 
-<app-books></app-books>
+  <label> UserName : </label>{{userName}}   <br>
+  <label> Role : </label>{{role}}           <br>
+  <label> Dept : </label>{{dept}}            <br>
+  <label> Status : </label> <p [ngStyle]="{color : getColor()}">Server is {{status}} </p>
+
+  <app-books></app-books>
+
+</div>
 
 
 
