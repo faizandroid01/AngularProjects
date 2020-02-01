@@ -9,7 +9,7 @@ export class ServersComponent implements OnInit {
 
   allowNewServer = false;
   serverName = '';
-  listOfServers = ['Server 1 ', 'Server 2'];
+  listOfServers = ['Server 1 '];
 
   serverCreationStatus = 'No server Created';
   serverCreated = false;
@@ -18,6 +18,13 @@ export class ServersComponent implements OnInit {
     setTimeout(() => {
       this.allowNewServer = true;
     }, 2000);
+  }
+
+  allowedToAddServer() {
+    if (this.allowNewServer && this.serverName.toString().length !== 0) {
+      return true;
+    }
+    return false;
   }
 
   ngOnInit() {
@@ -37,8 +44,7 @@ export class ServersComponent implements OnInit {
 
 
   onResetClicked() {
-    this.serverName = ' ';
-    this.serverCreated = false;
+    this.serverName = '';
   }
 
 }

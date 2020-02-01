@@ -8,11 +8,16 @@
   <label> UserName : </label>{{userName}}   <br>
   <label> Role : </label>{{role}}           <br>
   <label> Dept : </label>{{dept}}            <br>
-  <label> Status : </label> <p [ngStyle]="{backgroundColor : getColor()}"
-                                [ngClass]="{online :  status === 'Active' }" >Server is {{status}} </p>
+  <label> Status : </label>
+  <p [ngStyle]="{backgroundColor : getColor()}"
+     [ngClass]="{online :  status === 'Active' }">Server is {{status}} </p>
 
   <app-servers></app-servers>
 
+</div>
+
+<div class="test">
+  <app-test></app-test>
 </div>
 
 

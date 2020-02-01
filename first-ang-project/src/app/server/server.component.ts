@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 
 @Component({
-  // selector: '[app-server]',
+  // selector: '[-server]',
   // tslint:disable-next-line:component-selector
   selector: 'app-server',
   templateUrl: './server.component.html',
