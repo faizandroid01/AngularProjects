@@ -1,0 +1,48 @@
+<!--<app-server></app-server> -->
+<!--  For Attribute type of selector
+<div app-server></div>
+<div app-server></div> -->
+
+<!--<div class="app-server"></div>-->
+<!--<div class="app-server"></div>-->
+
+
+<div class="base">
+
+
+  <div class="eventBinding">
+    <!--Forms Module is to be imported in App module from @angular/core-->
+    <input class="form-control"
+           (input)="onUpdateServerName($event)"
+    >
+    <br>
+    <input class="form-control" [(ngModel)]="serverName">
+    <br>
+    <button class="btn btn-primary"
+            [disabled]=!allowNewServer
+            (click)="onServerCreated()"
+    > Add Server
+    </button>
+
+    <button class="btn btn-danger"
+            [disabled]=" serverName === '' "
+            (click)="onResetClicked()"
+    > RESET
+    </button>
+
+    <h4 [innerText]="allowNewServer"> Button Active {{allowNewServer}}</h4>
+
+
+    <!--    <label class="redLabel"> Server status : </label>  {{serverCreationStatus}}-->
+    <p *ngIf="serverCreated"> Server is created successfully . Name of the server is : {{serverName}}  </p>
+    <p *ngIf="!serverCreated"> No server was created . </p>
+
+    <br>
+    <label>Server Name Through ($event) bind : </label> {{serverName}} <br>
+    <label>Server Name Through (2Way-Binding) : </label> {{serverName}}
+  </div>
+
+</div>
+
+
+<app-server *ngFor="let server of listOfServers"></app-server>

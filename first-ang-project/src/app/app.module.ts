@@ -1,20 +1,21 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
 
-import { AppComponent } from './app.component';
+import {AppComponent} from './app.component';
 import {FormsModule} from '@angular/forms';
 import {ServerComponent} from './server/server.component';
-import { BooksComponent } from './books/books.component';
+import {ServersComponent} from './servers/servers.component';
 
 @NgModule({
   declarations: [
-    AppComponent, ServerComponent, BooksComponent
+    AppComponent, ServerComponent, ServersComponent
   ],
-    imports: [
-        BrowserModule,
-        FormsModule
-    ],
+  imports: [
+    BrowserModule,
+    FormsModule
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

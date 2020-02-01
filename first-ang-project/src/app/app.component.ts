@@ -12,9 +12,12 @@ export class AppComponent {
   dept = 10;
 
   constructor() {
-    setTimeout(() => {
-      this.status = 'Active';
-    }, 2000);
+    // setTimeout(() => {
+    //   this.status = 'Active';
+    // }, 2000);
+
+    this.status = Math.random() > 0.5 ? 'Active' : 'InActive';
+
 
   }
 

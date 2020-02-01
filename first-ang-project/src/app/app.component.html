@@ -8,9 +8,10 @@
   <label> UserName : </label>{{userName}}   <br>
   <label> Role : </label>{{role}}           <br>
   <label> Dept : </label>{{dept}}            <br>
-  <label> Status : </label> <p [ngStyle]="{color : getColor()}">Server is {{status}} </p>
+  <label> Status : </label> <p [ngStyle]="{backgroundColor : getColor()}"
+                                [ngClass]="{online :  status === 'Active' }" >Server is {{status}} </p>
 
-  <app-books></app-books>
+  <app-servers></app-servers>
 
 </div>
 
