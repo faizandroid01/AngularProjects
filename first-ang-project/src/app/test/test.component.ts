@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-test',
@@ -7,9 +7,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TestComponent implements OnInit {
 
-  constructor() { }
+  isToggleOn = false;
+  toggleCount = 1;
+  logs = [];
+
+
+  date: Date = new Date();
+
+  constructor() {
+
+  }
 
   ngOnInit() {
   }
+
+
+  toggleDisplay() {
+    this.logs.push(this.toggleCount++ + '..........' + new Date());
+    this.isToggleOn = !this.isToggleOn;
+
+  }
+
 
 }

@@ -1,4 +1,13 @@
-<button class="btn-info">View Files</button>
+<button class="btn-info" (click)="toggleDisplay()">Display Details</button>
+
+<p *ngIf="isToggleOn"> Secret password = tuna</p>
+
+<h3>Logs For Count</h3>
+
+<p *ngFor="let logItem of logs ; let i = index"
+   [ngClass]="{conditionalColor : i>4}"
+   [ngStyle]="{backgroundColor :  i>4 ? 'blue' : 'transparent'}"
+>{{logItem}}</p>
 
 
 
