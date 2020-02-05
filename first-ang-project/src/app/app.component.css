@@ -3,7 +3,8 @@ h3 {
   font-family: SansSerif, serif;
   font-style: oblique;
 }
-hr{
+
+hr {
   color: cadetblue;
   alignment: center;
   width: 80%;
@@ -20,8 +21,8 @@ hr{
   margin: 10px;
 }
 
-.online{
-  color :white ;
+.online {
+  color: white;
 }
 
 

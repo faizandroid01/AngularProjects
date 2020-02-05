@@ -1,16 +1,16 @@
-import {Page} from './.po';
-import {browser, logging} from 'protractor';
+import { AppPage } from './app.po';
+import { browser, logging } from 'protractor';
 
-describe('workspace-project ', () => {
-  let page: Page;
+describe('workspace-project App', () => {
+  let page: AppPage;
 
   beforeEach(() => {
-    page = new Page();
+    page = new AppPage();
   });
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('first-ang-project  is running!');
+    expect(page.getTitleText()).toEqual('sec-ang-project app is running!');
   });
 
   afterEach(async () => {

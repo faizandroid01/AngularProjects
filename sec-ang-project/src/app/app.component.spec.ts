@@ -1,5 +1,5 @@
-import {TestBed, async} from '@angular/core/testing';
-import {AppComponent} from './app.component';
+import { TestBed, async } from '@angular/core/testing';
+import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -16,16 +16,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'first-ang-project'`, () => {
+  it(`should have as title 'sec-ang-project'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('first-ang-project');
+    expect(app.title).toEqual('sec-ang-project');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('first-ang-project app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('sec-ang-project app is running!');
   });
 });
