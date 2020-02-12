@@ -1,3 +1,10 @@
 If the angular project is not equivalent to the value of ng --version as of the created one ,then it wont run :
 To make it run 
 npm install --save-dev @angular/cli@latest
+
+--Addning Boot Strap through -- npm install --save bootstrap@3
+And Addressing in angular.json from actual directory structure 
+
+eg Add below structue in style[]
+
+../node_modules/bootstrap/dist/css/bootstrap.min.css (See for the path relatively it changes)
